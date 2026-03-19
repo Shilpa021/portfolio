@@ -1,65 +1,124 @@
-import Image from "next/image";
+'use client'
+import Section from "../../components/Section";
+import Card from "../../components/Card";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import Hero from "../../components/Hero";
+import Signature from "../../components/Signature";
+import Impact from "../../components/Impact";
+import Philosophy from "../../components/Philosophy";
+import Decisions from "../../components/Decisions";
+import Failure from "../../components/Failure";
+import Story from "../../components/Story";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="px-6 py-16 max-w-5xl mx-auto">
+
+      {/* HERO */}
+      {/* <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="section relative"
+      >
+        <div className="absolute -top-20 -left-20 w-72 h-72 bg-purple-500/20 blur-3xl rounded-full"></div>
+
+        <h1 className="text-5xl font-bold">Shilpa Rana</h1>
+        <h1 className="text-5xl font-semibold leading-tight max-w-2xl">
+          I build frontend systems that scale —
+          <span className="text-gray-500">
+            from UI components to architecture powering 100K+ users
+          </span>
+        </h1>
+
+        <p className="mt-6 text-gray-400 max-w-xl">
+          Frontend Tech Lead with 10+ years experience in React, GraphQL,
+          and performance optimization. Focused on building systems,
+          not just features.
+        </p>
+      </motion.section> */}
+
+<Hero />
+      {/* ABOUT */}
+      <Section title="About">
+        <p className="text-gray-400 max-w-2xl">
+          10+ years of experience building high-performance web and Smart TV apps.
+          I specialize in React, GraphQL BFF, and frontend architecture.
+          I’ve led teams, improved performance by 30%+, and built reusable systems
+          that scale across products.
+        </p>
+      </Section>
+
+      {/* SKILLS */}
+      <Section title="Skills">
+        <div className="flex flex-wrap gap-3">
+          {[
+            "React", "Javascript", "GraphQL", "Redux",
+            "TypeScript", "Next.js", "Performance", "Design Systems"
+          ].map(s => (
+            <span key={s} className="bg-gray-800 px-3 py-1 rounded-full text-sm">
+              {s}
+            </span>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </Section>
+
+      {/* PROJECTS */}
+      <Section title="Selected Work">
+        <div className="grid gap-6">
+
+          <Card>
+            <h3 className="text-xl font-semibold">
+              PRM Sales & Service (Tata Play)
+            </h3>
+            <p className="text-gray-400 mt-2">
+              Built GraphQL BFF, reduced API calls by 40%, improved load time by 30%.
+            </p>
+            <Link href="/case-study/prm" className="text-blue-400 mt-2 inline-block">
+              Read Case Study →
+            </Link>
+          </Card>
+
+          <Card>
+            <h3 className="text-xl font-semibold">
+              Smart TV Platform
+            </h3>
+            <p className="text-gray-400 mt-2">
+              Built React TV apps optimized for low memory devices.
+            </p>
+            <Link href="/case-study/tv" className="text-blue-400 mt-2 inline-block">
+              Read Case Study →
+            </Link>
+          </Card>
+
+          <Card>
+            <h3 className="text-xl font-semibold">
+              ULTA Performance Optimization
+            </h3>
+            <p className="text-gray-400 mt-2">
+              Improved rendering performance by 25% via memoization.
+            </p>
+            <Link href="/case-study/ulta" className="text-blue-400 mt-2 inline-block">
+              Read Case Study →
+            </Link>
+          </Card>
+
         </div>
-      </main>
-    </div>
+      </Section>
+
+      {/* CONTACT */}
+      <Section title="Contact">
+        <p className="text-gray-400">rana.shilpa021@gmail.com</p>
+        <p className="text-gray-400">linkedin.com/in/shilparana021</p>
+      </Section>
+
+      <Signature />
+      <Impact />
+      <Philosophy />
+      <Decisions />
+      <Failure />
+      <Story />
+
+    </main>
   );
 }
