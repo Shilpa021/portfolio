@@ -79,11 +79,18 @@ body {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --orange: 255 165 0;
+
+  /* :root { */
+  --background: 0 0% 5%;
+  --foreground: 0 0% 98%;
+/* } */
 }
 
 /* Base */
 html {
   scroll-behavior: smooth; /* smooth scroll */
+  
 }
 
 body {
@@ -94,6 +101,12 @@ body {
 /* Reusable classes */
 .section {
   @apply mb-24; /* consistent spacing */
+   scroll-margin-top: 80px;
+}
+
+.case-study-section {
+  @apply mb-4; /* consistent spacing */
+   scroll-margin-top: 80px;
 }
 
 .card {
@@ -175,6 +188,48 @@ body {
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+
+@theme inline {
+  --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out none 1
+  var(--delay, 0ms);
+ 
+  @keyframes cell-ripple {
+    0% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+}
 
 @layer base {
   * {
@@ -187,3 +242,14 @@ body {
     @apply font-sans;
   }
 }
+
+.text-orange {
+  color: rgb(var(--orange));
+}
+
+.border-orange {
+  border-color: rgb(var(--orange));
+}
+
+
+
