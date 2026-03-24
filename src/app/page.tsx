@@ -29,7 +29,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="px-6 py-16 mx-auto bg-gray-950">
+    <main className="px-6 py-16 mx-auto bg-gray-950 max-sm:px-2">
       <div className="relative overflow-hidden">
         <Hero />
         {/* Background */}

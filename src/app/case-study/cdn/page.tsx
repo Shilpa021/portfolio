@@ -1,9 +1,10 @@
-const Section = ({ title, children }: any) => (
-    <section className="case-study-section">
-        <h2 className="text-xl font-semibold mb-3 text-amber-50">{title}</h2>
-        {children}
-    </section>
-);
+// const CaseStudySection = ({ title, children }: any) => (
+//     <section className="case-study-section">
+//         <h2 className="text-xl font-semibold mb-3 text-amber-50">{title}</h2>
+//         {children}
+//     </section>
+// );
+import CaseStudySection from "@/components/CaseStudySection";
 
 const List = ({ items }: { items: string[] }) => (
     <ul className="list-disc ml-6 space-y-1 text-gray-400">
@@ -31,17 +32,17 @@ export default function CDNManager() {
                 </header>
 
                 {/* Context */}
-                <Section title="Context">
+                <CaseStudySection title="Context">
                     <p>
                         Multiple internal tools required similar UI components such as
                         dashboards, charts, configuration panels, and analytics views.
                         However, each tool was being built independently, leading to
                         duplication and inconsistent user experience.
                     </p>
-                </Section>
+                </CaseStudySection>
 
                 {/* Core Problems */}
-                <Section title="Core Problems">
+                <CaseStudySection title="Core Problems">
                     <List
                         items={[
                             "Repeated UI development across multiple internal tools",
@@ -50,10 +51,10 @@ export default function CDNManager() {
                             "Slower development cycles due to duplicated work",
                         ]}
                     />
-                </Section>
+                </CaseStudySection>
 
                 {/* My Role */}
-                <Section title="My Role">
+                <CaseStudySection title="My Role">
                     <List
                         items={[
                             "Led the core frontend development team building the CDN Manager UI",
@@ -62,10 +63,10 @@ export default function CDNManager() {
                             "Improved consistency and reduced duplicate development efforts",
                         ]}
                     />
-                </Section>
+                </CaseStudySection>
 
                 {/* Key Solutions */}
-                <Section title="Key Solutions">
+                <CaseStudySection title="Key Solutions">
                     <List
                         items={[
                             "Built reusable UI modules reused across 3+ internal tools",
@@ -74,18 +75,18 @@ export default function CDNManager() {
                             "Optimized component structure for maintainability and scalability",
                         ]}
                     />
-                </Section>
+                </CaseStudySection>
 
                 {/* Architecture */}
-                <Section title="Architecture & Stack">
+                <CaseStudySection title="Architecture & Stack">
                     <p>
                         React → Reusable Component Library → Recharts for analytics →
                         Modular UI architecture reused across multiple internal platforms
                     </p>
-                </Section>
+                </CaseStudySection>
 
                 {/* Impact */}
-                <Section title="Impact">
+                <CaseStudySection title="Impact">
                     <List
                         items={[
                             "Reusable UI modules adopted across 3+ internal tools",
@@ -94,17 +95,17 @@ export default function CDNManager() {
                             "Faster development cycles due to reusable architecture",
                         ]}
                     />
-                </Section>
+                </CaseStudySection>
 
                 {/* Learnings */}
-                <Section title="Key Learnings">
+                <CaseStudySection title="Key Learnings">
                     <p>
                         Investing in reusable UI architecture early can significantly
                         accelerate development across multiple products. Building
                         shared modules not only improves efficiency but also ensures
                         consistency and long-term maintainability.
                     </p>
-                </Section>
+                </CaseStudySection>
             </div>
         </main>
     );

@@ -101,12 +101,12 @@ body {
 /* Reusable classes */
 .section {
   @apply mb-24; /* consistent spacing */
-   scroll-margin-top: 80px;
+    scroll-margin-top: 80px;
 }
 
 .case-study-section {
   @apply mb-4; /* consistent spacing */
-   scroll-margin-top: 80px;
+    scroll-margin-top: 80px;
 }
 
 .card {

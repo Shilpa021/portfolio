@@ -59,7 +59,7 @@ export default function ResumeModal() {
                     </a>
                 </p>
 
-                <div className="flex gap-3 mt-8">
+                <div className="mx-auto my-0 mt-8">
                     <a
                         href={resumeDownload}
                         target="_blank"

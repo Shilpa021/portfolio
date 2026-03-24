@@ -33,7 +33,7 @@ const experiences = [
 export default function Experience() {
     return (
         <Section
-            title="" id="experience"
+            id="experience"
         >
             <Reveal>
                 <h2 className="text-2xl md:text-3xl font-medium mb-12">

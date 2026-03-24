@@ -17,7 +17,7 @@ export default function Footer(): JSX.Element {
         <ShootingStarsInteractive />
       </>}
 
-      <footer className="py-10 text-center text-sm text-gray-500 relative">
+      <footer className="pt-40 pb-20 text-center text-sm text-gray-500 relative">
         
         <p>
           © {new Date().getFullYear()} Shilpa Rana · Built with ☕ & curiosity

@@ -16,6 +16,7 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [active, setActive] = useState("");
 
+
     useEffect(() => {
         const sections = links
             .map((link) => document.getElementById(link.id))
@@ -39,6 +40,17 @@ export default function Navbar() {
         sections.forEach((section) => observer.observe(section));
 
         return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
+        const handleTopCheck = () => {
+            if (window.scrollY < 80) {
+                setActive("");
+            }
+        };
+
+        window.addEventListener("scroll", handleTopCheck);
+        return () => window.removeEventListener("scroll", handleTopCheck);
     }, []);
 
     const router = useRouter();
@@ -68,6 +80,7 @@ export default function Navbar() {
             block: "start",
         });
     };
+
     return (
         <nav className="fixed top-0 w-full z-50 backdrop-blur-xl">
             <div

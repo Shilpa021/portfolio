@@ -4,13 +4,13 @@ import { Reveal } from "./Reveal";
 import Section from "./Section";
 
 const failures = [
-    {
-        title: "Tight Coupling with APIs",
-        mistake:
-            "Tightly coupled frontend components with backend APIs, leading to frequent breakages and slow iteration.",
-        learning:
-            "Moved to a decoupled architecture using a GraphQL BFF to stabilize contracts and improve velocity.",
-    },
+    // {
+    //     title: "Tight Coupling with APIs",
+    //     mistake:
+    //         "Tightly coupled frontend components with backend APIs, leading to frequent breakages and slow iteration.",
+    //     learning:
+    //         "Moved to a decoupled architecture using a GraphQL BFF to stabilize contracts and improve velocity.",
+    // },
     {
         title: "Uncontrolled Re-renders",
         mistake:

@@ -4,14 +4,19 @@ import Section from "./Section"
 function Contact() {
     return (
         <Section
-            title="Contact"
             id="contact"
-            sectionClass="py-28 max-w-3xl mx-auto text-center"
+            sectionClass="pb-28  pt-12 max-w-3xl mx-auto text-center"
         >
             <Reveal>
-                <h2 className="text-2xl md:text-3xl font-medium mb-6">
-                    Let’s work together
+                <h2 className="text-md font-medium mb-6">
+                    Contact
                 </h2>
+            </Reveal>
+
+            <Reveal>
+                <h3 className="text-2xl md:text-3xl font-medium mb-6">
+                    Let’s work together
+                </h3>
             </Reveal>
 
             <Reveal>

@@ -1,10 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/stars-background";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import ScrollIndicator from "./ScrollIndicator";
 import { Reveal } from "./Reveal";
 
@@ -37,15 +34,17 @@ export default function Hero() {
                         </h2>
 
                     </motion.div>
+                    <div className="hidden md:block">
                     <ScrollIndicator />
+
+                    </div>
                 </Reveal>
 
                 <div
                     className={`absolute bottom-4 right-4 text-sm text-gray-500 text-right 
                                 backdrop-blur-md px-3 py-2 rounded-xl shadow-sm
                                 transition-all duration-500
-                                `
-                    }
+                                `}
                 >
                     <Reveal>
                         <p>Did you catch a shooting star?</p>

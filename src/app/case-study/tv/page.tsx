@@ -1,16 +1,4 @@
-// const Section = ({ title, children }: any) => (
-//     <section className="mt-10">
-//         <h2 className="text-xl font-semibold mb-3">{title}</h2>
-//         {children}
-//     </section>
-// );
-
-const Section = ({ title, children }: any) => (
-    <section className="case-study-section">
-        <h2 className="text-xl font-semibold mb-3 text-amber-50">{title}</h2>
-        {children}
-    </section>
-);
+import CaseStudySection from "@/components/CaseStudySection";
 
 const List = ({ items }: { items: string[] }) => (
     <ul className="list-disc ml-6 space-y-1 text-gray-400">
@@ -22,11 +10,8 @@ const List = ({ items }: { items: string[] }) => (
 
 export default function TV() {
     return (
-        // <main className="px-6 py-24 max-w-3xl mx-auto text-gray-400 leading-relaxed">
-        <main className=" text-gray-500 leading-relaxed  bg-gray-950" >
+        <main className=" text-gray-500 leading-relaxed bg-gray-950" >
         <div className="px-6 py-24 max-w-3xl mx-auto" >
-
-
 
             {/* Header */}
             <header className="mb-8">
@@ -40,17 +25,17 @@ export default function TV() {
             </header>
 
             {/* Context */}
-            <Section title="Context">
+            <CaseStudySection title="Context">
                 <p>
                     Smart TV platforms operate under strict memory and processing constraints,
                     with users navigating via remote controls instead of touch. Ensuring
                     smooth performance while maintaining usability across thousands of
                     active devices was critical.
                 </p>
-            </Section>
+            </CaseStudySection>
 
             {/* Challenges */}
-            <Section title="Core Challenges">
+            <CaseStudySection title="Core Challenges">
                 <List
                     items={[
                         "Severely limited memory and CPU capabilities",
@@ -59,10 +44,10 @@ export default function TV() {
                         "Inconsistent performance across device variants",
                     ]}
                 />
-            </Section>
+            </CaseStudySection>
 
             {/* Solutions */}
-            <Section title="Key Solutions">
+            <CaseStudySection title="Key Solutions">
                 <List
                     items={[
                         "Optimized rendering using memoization and component splitting",
@@ -71,27 +56,27 @@ export default function TV() {
                         "Built lightweight, reusable UI components tailored for TV platforms",
                     ]}
                 />
-            </Section>
+            </CaseStudySection>
 
             {/* Analytics */}
-            <Section title="User Insights & Analytics">
+            <CaseStudySection title="User Insights & Analytics">
                 <p>
                     Integrated Mixpanel to track user behaviour across thousands of active
                     devices, enabling data-driven decisions around navigation patterns,
                     feature usage, and performance bottlenecks.
                 </p>
-            </Section>
+            </CaseStudySection>
 
             {/* Architecture */}
-            <Section title="Architecture">
+            <CaseStudySection title="Architecture">
                 <p>
                     React-based TV UI → Optimized state management → Lightweight APIs →
                     Analytics via Mixpanel
                 </p>
-            </Section>
+            </CaseStudySection>
 
             {/* Impact */}
-            <Section title="Impact">
+            <CaseStudySection title="Impact">
                 <List
                     items={[
                         "Smooth and consistent performance across thousands of active devices",
@@ -100,16 +85,16 @@ export default function TV() {
                         "Data-driven improvements using real user behaviour insights",
                     ]}
                 />
-            </Section>
+            </CaseStudySection>
 
             {/* Learnings */}
-            <Section title="Key Learnings">
+            <CaseStudySection title="Key Learnings">
                 <p>
                     Building for constrained environments requires a shift in mindset —
                     prioritizing performance, minimizing complexity, and designing
                     specifically for the platform rather than reusing web paradigms.
                 </p>
-            </Section>
+            </CaseStudySection>
 </div>
         </main>
     );
