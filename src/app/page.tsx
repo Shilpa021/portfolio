@@ -7,12 +7,9 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Experience from "../components/Experience";
 import { StarsBackground } from "@/components/ui/stars-background";
-import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 
 export default function Home() {
-  const params = useSearchParams();
-
   useEffect(() => {
     const hash = window.location.hash.replace("#", "");
     if (!hash) return;

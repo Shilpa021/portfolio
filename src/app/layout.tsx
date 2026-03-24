@@ -14,3 +14,8 @@ export default function RootLayout({ children }: any) {
     </html>
   );
 }
+
+export const metadata = {
+  title: "Shilpa Rana | Frontend Engineer",
+  description: "Senior Frontend Engineer building scalable web apps",
+};
