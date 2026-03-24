@@ -49,7 +49,7 @@ function Contact() {
                             LinkedIn
                         </a>
                         <a
-                            href="https://github.com/Shilpa021"
+                            href="https://github.com/Shilpa021/portfolio"
                             target="_blank"
                             className="hover:text-white transition"
                         >
