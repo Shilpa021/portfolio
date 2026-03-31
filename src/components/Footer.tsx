@@ -23,7 +23,7 @@ export default function Footer(): JSX.Element {
           <p>
             © {new Date().getFullYear()} Shilpa Rana
           </p>
-          <p>Built with React, attention to detail, and a bit of obsession.</p>
+          <p>Built with Next, attention to detail, and a bit of obsession.</p>
           <p className="mt-2 text-gray-400">
             If you made it this far, let’s build something great.
           </p>
