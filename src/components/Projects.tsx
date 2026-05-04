@@ -11,6 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Reveal } from "./Reveal";
 import CaseStudyRenderer from "./CaseStudyRenderer";
 import { caseStudies, CaseStudyKey } from "./../data/caseStudies";
+import PersonalProjects from "./PersonalProjects";
 
 const projects: {
     id: CaseStudyKey;
@@ -190,6 +191,8 @@ export default function Projects() {
                     );
                 })}
             </div>
+
+            <PersonalProjects />
         </section>
     );
 }
