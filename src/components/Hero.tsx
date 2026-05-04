@@ -17,28 +17,30 @@ export default function Hero() {
                     >
                         <h1 className="text-4xl md:text-6xl font-bold ">
                             <span>
-                                Frontend
+                                Frontend &amp;
                             </span> <br></br>
-                            <span className=" ml-16 text-orange">Engineer.</span>
+                            <span className="ml-16 text-orange">AI Engineer.</span>
                         </h1>
 
                         <p className="mt-6 text-lg text-gray-600">
                             Senior Frontend Engineer building scalable, high-performance web
-                            applications with React & modern technologies.
+                            applications with React — and shipping AI-powered products with
+                            Next.js, LLMs &amp; streaming APIs.
                         </p>
+
                         <h2 className="text-2xl font-semibold leading-tight max-w-2xl mt-20">
                             I build frontend systems that scale —
                             <span className="text-gray-500">
-                                <span>{" "}</span>from UI components to architecture powering 100K+ users
+                                <span>{" "}</span>from UI architecture powering 100K+ users to
+                                AI-integrated apps with real-time LLM streaming.
                             </span>
                         </h2>
 
                     </motion.div>
-                    <div className="hidden md:block">
-                    <ScrollIndicator />
-
-                    </div>
                 </Reveal>
+                <div className="hidden md:block">
+                    <ScrollIndicator />
+                </div>
 
                 <div
                     className={`absolute bottom-4 right-4 text-sm text-gray-500 text-right 

@@ -20,39 +20,40 @@ function About() {
                         <div className='md:col-span-5'>
                             <Reveal>
                                 <p className='text-4xl text-white'>Hi, I am Shilpa.</p>
-                            </Reveal >
+                            </Reveal>
                         </div>
                         <div className='md:col-span-7 text-gray-500'>
                             <Reveal>
                                 <p className='pb-4'>
-                                    I’m a frontend engineer with a strong focus on building
-                                    performant, scalable, and intuitive web applications.
-                                    I enjoy turning complex problems into clean, efficient
-                                    user experiences.
+                                    I'm a frontend engineer with 10+ years of experience building
+                                    scalable, high-performance web applications — and more recently,
+                                    AI-powered products that combine modern frontend with LLM integration.
                                 </p>
                             </Reveal>
                             <Reveal>
                                 <p className='pb-4'>
-                                    Over the past few years, I’ve worked extensively with React,
-                                    optimizing rendering performance, structuring modular
-                                    architectures, and improving overall application
-                                    responsiveness. I care deeply about writing code that not
-                                    only works, but scales well as products grow.
+                                    I've worked extensively with React, Next.js, and GraphQL —
+                                    optimizing rendering performance, designing modular architectures,
+                                    and leading teams that ship reliable, user-centric products at scale.
+                                    My work has reached 100K+ users across enterprise platforms,
+                                    OTT/Smart TV apps, and e-commerce.
                                 </p>
                             </Reveal>
                             <Reveal>
                                 <p className='pb-4'>
-                                    I’m particularly interested in the intersection of
-                                    performance, user experience, and system design — where
-                                    small technical decisions can have a large impact on how
-                                    users interact with a product.
+                                    Lately, I've been building at the intersection of frontend and AI —
+                                    shipping projects like an AI Meeting Summarizer (speech-to-text →
+                                    LLM insights) and an AI Brochure Generator (real-time streaming output
+                                    with PDF export). This is where I see frontend engineering heading,
+                                    and where I'm already building.
                                 </p>
                             </Reveal>
                             <Reveal>
                                 <p className='pb-4'>
-                                    Outside of work, I enjoy exploring new technologies,
-                                    refining my problem-solving skills, and building things
-                                    that push me to think better as an engineer.
+                                    I'm particularly drawn to problems where small architectural decisions
+                                    have outsized impact — on performance, scalability, and the way users
+                                    experience a product. I care about writing code that doesn't just work,
+                                    but scales well as products and teams grow.
                                 </p>
                             </Reveal>
                         </div>

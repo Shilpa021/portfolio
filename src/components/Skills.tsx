@@ -10,11 +10,13 @@ import {
     GitBranch,
     Target,
     LucideIcon,
+    Sparkles,
 } from "lucide-react";
 
 type SkillCategory =
     | "Frontend"
     | "Backend"
+    | "AI & LLM"
     | "Tools"
     | "Architecture & Performance"
     | "Methodologies"
@@ -23,6 +25,7 @@ type SkillCategory =
 const skillIcons: Record<SkillCategory, LucideIcon> = {
     Frontend: Monitor,
     Backend: Server,
+    "AI & LLM": Sparkles,
     Tools: Wrench,
     "Architecture & Performance": Layers,
     Methodologies: GitBranch,
@@ -66,6 +69,22 @@ export default function Skills() {
                 ],
             },
             {
+                title: "AI & LLM",
+                items: [
+                    "LLM Integration",
+                    "Prompt Engineering",
+                    "AI SDK",
+                    "Groq API",
+                    "Streaming APIs",
+                    "Speech-to-Text",
+                    "Cloudinary AI",
+                    "AssemblyAI",
+                    "AI-Powered Products",
+                    "Generative AI",
+                    "Real-time LLM Output",
+                ],
+            },
+            {
                 title: "Tools",
                 items: [
                     "Git",
@@ -74,11 +93,13 @@ export default function Skills() {
                     "Jira",
                     "VS Code",
                     "Github Copilot",
+                    "Cursor",
                     "GitLab",
                     "Bitbucket",
                     "MixPanel",
                     "CI/CD Pipelines",
-                    "Vite/Webpack",
+                    "Vite",
+                    "Vercel"
                 ],
             },
             {

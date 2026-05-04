@@ -16,7 +16,7 @@ const personalProjects: PersonalProject[] = [
         title: "Portfolio Website",
         description:
             "A modern developer portfolio with motion-based UI, reusable sections, and responsive layouts.",
-        websiteUrl: "https://your-portfolio.vercel.app",
+        websiteUrl: "https://shilparana-portfolio.vercel.app/",
         githubUrl: "https://github.com/Shilpa021/portfolio",
         techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     },

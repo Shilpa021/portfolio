@@ -3,25 +3,17 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function ScrollIndicator() {
-    const [visible, setVisible] = useState(true);
-    const [mounted, setMounted] = useState(false);
-
-    // useEffect(() => {
-    //     setMounted(true);
-    // }, []);
+    const [visible, setVisible] = useState(false);
 
     useEffect(() => {
-        setMounted(true);
+        setVisible(window.scrollY < 500);
         const handleScroll = () => {
-            setVisible(window.scrollY < 500); // hide quickly on scroll
+            setVisible(window.scrollY < 500);
         };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
-    if (!mounted) return null; // 👈 prevents initial flash
-
 
     return (
         <div
